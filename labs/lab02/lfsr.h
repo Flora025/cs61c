@@ -1,1 +1,1 @@
-void lfsr_calculate(uint16_t *reg);
+// void lfsr_calculate(uint16_t* reg);
