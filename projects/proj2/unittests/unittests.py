@@ -51,7 +51,30 @@ class TestRelu(TestCase):
         t.check_array(array0, [1, 0, 3, 0, 5, 0, 7, 0, 9])
         # generate the `assembly/TestRelu_test_simple.s` file and run it through venus
         t.execute()
+    
+    def test_all_negative(self):
+        t = AssemblyTest(self, "relu.s")
+        # create an array in the data section
+        array0 = t.array([-1,-1,-1,-1])
+        # load address of `array0` into register a0
+        t.input_array("a0", array0)
+        # set a1 to the length of our array
+        t.input_scalar("a1", len(array0))
+        # call the relu function
+        t.call("relu")
+        # check that the array0 was changed appropriately
+        t.check_array(array0, [0,0,0,0])
+        # generate the `assembly/TestRelu_test_simple.s` file and run it through venus
+        t.execute()
 
+    def test_empty(self):
+        t = AssemblyTest(self, "relu.s")
+        array0 = t.array([])
+        t.input_array("a0", array0)
+        t.input_scalar("a1", len(array0))
+        t.call("relu")
+        t.execute(code=32)
+        
     @classmethod
     def tearDownClass(cls):
         print_coverage("relu.s", verbose=False)
