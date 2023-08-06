@@ -2,19 +2,39 @@
 
 Part 1
     blocksize = 20, n = 100: 
+        Testing naive transpose: 0.01 milliseconds
+        Testing transpose with blocking: 0.013 milliseconds
     blocksize = 20, n = 1000: 
+        Testing naive transpose: 1.074 milliseconds
+        Testing transpose with blocking: 0.808 milliseconds
     blocksize = 20, n = 2000: 
+        Testing naive transpose: 2.791 milliseconds
+        Testing transpose with blocking: 2.555 milliseconds
     blocksize = 20, n = 5000: 
+        Testing naive transpose: 115.887 milliseconds
+        Testing transpose with blocking: 20.138 milliseconds
     blocksize = 20, n = 10000: 
+        Testing naive transpose: 371.422 milliseconds
+        Testing transpose with blocking: 85.93 milliseconds
 
-    Checkoff Question 1:
-    Checkoff Question 2:
+    Checkoff Question 1: 100 -> 1000
+    Checkoff Question 2: 差不多大的时候无法体现spatial locality的优势
 
 Part 2
     blocksize = 50, n = 10000:
+        Testing naive transpose: 301.322 milliseconds
+        Testing transpose with blocking: 67.465 milliseconds
     blocksize = 100, n = 10000:
+        Testing naive transpose: 318.682 milliseconds
+        Testing transpose with blocking: 73.183 milliseconds
     blocksize = 500, n = 10000:
+        Testing naive transpose: 310.144 milliseconds
+        Testing transpose with blocking: 85.83 milliseconds
     blocksize = 1000, n = 10000:
+        Testing naive transpose: 329.751 milliseconds
+        Testing transpose with blocking: 76.64 milliseconds
     blocksize = 5000, n = 10000:
+        Testing naive transpose: 327.368 milliseconds
+        Testing transpose with blocking: 335.708 milliseconds
 
     Checkoff Question 3:

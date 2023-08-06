@@ -1,8 +1,8 @@
-1.
-2.
+1.jki [n = 1000, 25.814 Gflop/s], kji
+2.ijk [n = 1000, 2.207 Gflop/s], jik
 
 --- lines below are ignored by the AG ---
 
-Checkoff Question 1:
-Checkoff Question 2:
-Checkoff Question 3:
+Checkoff Question 1: col-major, 尤其jki的内层是按列由上至下遍历的（&&只涉及到C和A） => reduced miss rate
+Checkoff Question 2: 内层循环移动幅度大(ABC同时), did not take adv of spatial locality
+Checkoff Question 3: “变动幅度大”的放在外层 -> reduce miss rate -> optimized cache

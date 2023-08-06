@@ -1,12 +1,12 @@
 Scenario 1
-    1.
-    2.
-    3.
+    1. block size, step size
+    2. 0
+    3. step size, 1
 
 Scenario 2
-    1.
-    2.
-    3.
+    1. 32*2 (read&write)
+    2. MHHH
+    3. 1.0
 
 Scenario 3
     1.
@@ -17,8 +17,8 @@ Scenario 3
 
 --- lines below are ignored by the AG ---
 
-Checkoff Question 1:
-Checkoff Question 2:
-Checkoff Question 3:
-Checkoff Question 4:
+Checkoff Question 1: cache got replaced for every read, since the step size == block size
+Checkoff Question 2: block size, step size
+Checkoff Question 3: M(first-time access, definitely miss) -> H (write op, already retrived upon the prev miss) -> H (coincidentally retrived upon last miss, rmb there are 16bytes in a block) -> H (write op)
+Checkoff Question 4: array size == cache size
 Checkoff Question 5:
