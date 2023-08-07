@@ -1,6 +1,9 @@
 # my ignore
 /tmp/*
 .vscode/
+/ref/*
+/lec-slides/*
+/disc/*
 
 !*/
 !**.java
