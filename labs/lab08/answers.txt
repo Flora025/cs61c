@@ -1,10 +1,11 @@
 Exercise 1:
-    1.
-    2.
-    3.
+    1.32
+    2.3,7,0,7
+    3.no,no
 
 Exercise 2:
-    1.
+    1.(conceptually) page no. patterns like 0123401234-> inevitable TLB misses
+    for inevitable page faults, just use up the space of Page Table and keep invalidating items
 
 Exercise 3:
     1.
@@ -12,8 +13,8 @@ Exercise 3:
 --- lines below are ignored by the AG ---
 
 Exercise 1 Checkoff Questions:
-    1.
-    2.
+    1.split into page and offset -> look up in TLB holding the page bits -> (opt) look up in page table -> get physical page no. if found a match | otherwise (page faults) fetch from disk and record in PT and TLB
+    2.2^3 and 2^2
 
 Exercise 4 Checkoff Question:
-    1.
+    1.TLB cleared upon switching to another process
