@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.ejs": "html",
+    "omp_apps.h": "c"
+  }
+}
