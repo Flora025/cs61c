@@ -4,6 +4,7 @@
 /ref/*
 /lec-slides/*
 /disc/*
+/**/*.md
 
 !*/
 !**.java
